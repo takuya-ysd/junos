@@ -1,0 +1,10 @@
+- name: for test
+  hosts: all
+  vars:
+    test_msg: test message
+
+  tasks:
+
+  - name: show variable
+    debug:
+      msg: "{{ test_msg }}"
