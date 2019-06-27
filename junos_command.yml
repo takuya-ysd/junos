@@ -1,0 +1,10 @@
+- name: use junos_command module
+  hosts: junos
+  gather_facts: no
+
+  tasks:
+
+    - name: use junos_command module
+      junos_command:
+        commands: show version
+      when: ansible_network_os == 'junos'
