@@ -1,0 +1,7 @@
+- name: test junos_ping
+  hosts: junos
+  tasks:
+
+  - name: test junos_ping
+    junos_ping:
+      dest: 10.4.24.5
