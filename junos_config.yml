@@ -1,0 +1,10 @@
+- name: test junos_config
+  hosts: junos
+  tasks:
+
+    - name: test junos_config
+      junos_config:
+        lines:
+          - set interfaces ge-0/0/1 unit 0 description "test interface"
+        check_commit: yes
+        confirm_commit: yes
