@@ -7,5 +7,4 @@
     - name: use junos_command module 
       junos_command:
         commands:
-          - start shell
-          - exit
+          - ls -ltr
