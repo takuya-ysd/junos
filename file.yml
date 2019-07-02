@@ -1,0 +1,7 @@
+- name: test create file
+  hosts: junos
+  tasks:
+
+    - name: create file
+      file:
+        path: /var/home/junos/test.txt
