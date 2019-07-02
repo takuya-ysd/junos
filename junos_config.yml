@@ -7,5 +7,6 @@
         lines:
           - set interfaces ge-0/0/1 unit 0 description "test interface"
           - set firewall family vpls filter bpdu-guard term allow-ohter then accept
+          - set interface ge-0/0/1 disable
         check_commit: yes
         confirm_commit: yes
