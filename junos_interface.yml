@@ -1,0 +1,8 @@
+- name: test junos_interface
+  hosts: junos
+  tasks:
+
+    - name: test junos_interface
+      junos_interface:
+        name: ge-0/0/1
+        enabled: True
