@@ -8,4 +8,3 @@
       junos_command:
         commands:
           - start shell
-          - ls -ltr
