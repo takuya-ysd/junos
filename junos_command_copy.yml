@@ -8,3 +8,4 @@
       junos_command:
         commands:
           - start shell
+          - exit
