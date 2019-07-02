@@ -5,3 +5,4 @@
     - name: create file
       file:
         path: /var/home/junos/test.txt
+        state: touch
