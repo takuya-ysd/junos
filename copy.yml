@@ -6,3 +6,4 @@
       copy:
         src: /var/home/junos/test.txt
         dest: /var/home/junos/test/dest.txt
+        remote_src: yes
