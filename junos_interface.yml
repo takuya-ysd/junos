@@ -4,6 +4,6 @@
 
     - name: test junos_interface
       junos_interface:
-        name: ge-0/0/1
+        name: "{{ interface_name }}"
         enabled: True
-        state: "{{ ge_state }}"
+        state: "{{ interface_state }}"
