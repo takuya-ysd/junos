@@ -6,4 +6,4 @@
       junos_interface:
         name: ge-0/0/1
         enabled: True
-        state: down
+        state: "{{ ge_state }}"
