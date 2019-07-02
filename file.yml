@@ -6,3 +6,4 @@
       file:
         path: /var/home/junos/test.txt
         state: touch
+        owner: junos
