@@ -1,0 +1,10 @@
+- name: use junos_rpc
+  hosts: junos
+  gather_facts: no
+
+  tasks:
+    - name: use junos_rpc
+      junos_rpc:
+        rpc: 'request-shell-execute'
+        args:
+          command: 'cat /etc/passwd'
