@@ -1,0 +1,8 @@
+- name: test copy
+  hosts: junos
+
+  tasks:
+    - name: test copy
+      copy:
+        src: /var/home/junos/test.txt
+        dest: /var/home/junos/test/dest.txt
