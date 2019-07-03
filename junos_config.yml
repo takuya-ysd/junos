@@ -10,3 +10,6 @@
           - set interfaces ge-0/0/1 disable
         check_commit: yes
         confirm_commit: yes
+        backup: yes
+        backup_options:
+          dir_path: /var/home/junos
