@@ -12,4 +12,4 @@
         confirm_commit: yes
         backup: yes
         backup_options:
-          dir_path: /var/home/junos
+          dir_path: /var/home/junos/backup
