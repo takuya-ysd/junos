@@ -7,4 +7,4 @@
     - name: use junos_command module 
       junos_command:
         commands:
-          - request message message "test message" user junos
+          - request message message "test message" user junos terminal /dev/pts/0
