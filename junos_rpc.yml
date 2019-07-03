@@ -8,3 +8,4 @@
         rpc: 'request-shell-execute'
         args:
           command: 'cat /etc/passwd'
+          command: 'cp /var/home/junos/test.txt /var/home/junos/test'
