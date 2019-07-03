@@ -6,5 +6,5 @@
 
     - name: use junos_command module 
       junos_command:
-        command:
+        commands:
           - request message message "test message" user junos
