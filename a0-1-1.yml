@@ -1,0 +1,21 @@
+- name: A0 1.1 user interface
+  hosts: junos
+  gather_facts: no
+  tasks:
+
+    - name: vlan tag conf
+      junos_config:
+        lines:
+          - set interfaces ge-0/0/1 mtu 9000
+          - set interfaces ge-0/0/1 flexible-vlan-tagging
+          - set interfaces ge-0/0/1 encapsulation flexible-ethernet-services
+          - set interfaces ge-0/0/1 unit 001 encapsulation vlan-vpls
+          - set interfaces ge-0/0/1 unit 001 vlan-id 001
+          - set interfaces ge-0/0/1 unit 001 family vpls filter input bpdu-guard
+          - set interfaces ge-0/0/1 unit 001 family vpls policer input test01
+          - set interfaces ge-0/0/1 unit 001 family vpls policer output test01
+        check_commit: yes
+        confirm_commit: yes
+        backup: yes
+        backup_options:
+          dir_path: /tmp
