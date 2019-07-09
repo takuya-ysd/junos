@@ -7,7 +7,6 @@
       junos_config:
         lines:
           - set interfaces ge-0/0/1 mtu 9000
-          - set interfaces ge-0/0/1 flexible-vlan-tagging
           - set interfaces ge-0/0/1 encapsulation flexible-ethernet-services
         check_commit: yes
         confirm_commit: yes
