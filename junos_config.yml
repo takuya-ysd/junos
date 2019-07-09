@@ -1,5 +1,6 @@
 - name: test junos_config
   hosts: junos
+  gather_facts: no
   tasks:
 
     - name: test junos_config
@@ -7,7 +8,7 @@
         lines:
           - set interfaces ge-0/0/1 unit 0 description "test interface"
           - set firewall family vpls filter bpdu-guard term allow-ohter then accept
-          - set interfaces ge-0/0/1 disable
+          - set interfaces ge-0/0/1 "{{ inf_status }}"
         check_commit: yes
         confirm_commit: yes
         backup: yes
