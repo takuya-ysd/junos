@@ -7,7 +7,7 @@
       junos_config:
         lines:
           - set interfaces ge-0/0/1 mtu 9000
-        check_commit: yes
+        check_commit: no
         confirm_commit: yes
         backup: yes
         backup_options:
