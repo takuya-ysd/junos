@@ -1,0 +1,14 @@
+- name: C0 1.1 user interface
+  hosts: junos
+  gather_facts: no
+  tasks:
+
+    - name: add new instance
+      junos_config:
+        lines:
+          - set routing-instances testC0 instance-type vpls
+        check_commit: yes
+        confirm_commit: yes
+        backup: yes
+        backup_options:
+          dir_path: /tmp

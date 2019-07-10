@@ -1,0 +1,14 @@
+- name: C0 1.1 user interface
+  hosts: junos
+  gather_facts: no
+  tasks:
+
+    - name: add interface to instance
+      junos_config:
+        lines:
+          - set routing-instances hoge instance g0/0/0
+        check_commit: yes
+        confirm_commit: yes
+        backup: yes
+        backup_options:
+          dir_path: /tmp
