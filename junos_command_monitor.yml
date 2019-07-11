@@ -6,5 +6,5 @@
 
     - name: use junos_command module 
       junos_command:
-        commands:
+        rpcs:
           - monitor start message

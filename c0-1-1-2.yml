@@ -6,7 +6,7 @@
     - name: add interface to instance
       junos_config:
         lines:
-          - set routing-instances hoge instance ge-0/0/1
+          - set routing-instances hoge interface ge-0/0/1
         check_commit: yes
         confirm_commit: yes
         backup: yes
