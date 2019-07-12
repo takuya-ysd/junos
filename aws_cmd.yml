@@ -5,5 +5,8 @@
 
   tasks:
 
+#    - name: test aws cli
+#      shell: aws s3 ls
+
     - name: test aws cli
-      shell: aws s3 ls
+      command: aws s3 ls
