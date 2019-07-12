@@ -1,0 +1,9 @@
+---
+- name: test aws cli
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+
+    - name: test aws cli
+      shell: aws s3 ls
