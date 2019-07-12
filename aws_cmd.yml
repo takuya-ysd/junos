@@ -8,5 +8,8 @@
 #    - name: test aws cli
 #      shell: aws s3 ls
 
+    - name: show env
+      shell: env
+
     - name: test aws cli
-      command: aws s3 ls
+      command: /bin/aws s3 ls
