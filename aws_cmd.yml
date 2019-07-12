@@ -12,4 +12,6 @@
       shell: env
 
     - name: test aws cli
-      command: /bin/aws s3 ls
+      command: aws s3 ls
+      environment:
+        PYTHONPATH: "${PYTHONPATH}:/lib/python2.7/site-packages"
