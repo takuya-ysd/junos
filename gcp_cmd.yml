@@ -1,0 +1,9 @@
+---
+- name: test gcp
+  hosts: all
+  gather_facts: no
+
+  tasks:
+
+    - name: test gcloup cmd
+      shell: gcloud projects list
