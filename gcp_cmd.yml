@@ -8,8 +8,7 @@
     - name: " a image facts"
       gcp_compute_image_facts:
         filters:
-          - name = test_object
-          state: facts
+        - name = test_object
 
     - name: test gcloup cmd
       shell: gcloud projects list
