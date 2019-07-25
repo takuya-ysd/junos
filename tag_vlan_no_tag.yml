@@ -1,0 +1,26 @@
+- name: A0 1.1 user interface
+  hosts: junos
+  gather_facts: no
+  tasks:
+
+    - name: vlan tag conf
+      junos_config:
+        lines:
+          - set interfaces ge-0/0/1 mtu 9000
+        check_commit: no
+        confirm_commit: yes
+        backup: yes
+        backup_options:
+          dir_path: /tmp
+      when: tag_vlan == True
+
+    - name: no vlan tag conf
+      junos_config:
+        lines:
+          - set interfaces ge-0/0/2 mtu 9000
+        check_commit: yes
+        confirm_commit: yes
+        backup: yes
+        backup_options:
+          dir_path: /tmp
+      when: no_tag_vlan == True
