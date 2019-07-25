@@ -1,6 +1,11 @@
 - name: A0 1.1 user interface
   hosts: junos
   gather_facts: no
+
+  vars:
+    tag_vlan: False
+    no_tag_vlan: False
+
   tasks:
 
     - name: vlan tag conf
